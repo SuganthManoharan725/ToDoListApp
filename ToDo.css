@@ -1,0 +1,88 @@
+/* Style for todo item container */
+body {
+  animation: gradientAnimation 10s infinite alternate; /* 10-second duration, infinite loop, alternate direction */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    transition: background 50s; 
+}
+@keyframes gradientAnimation {
+  0% {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+  50% {
+      background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  }
+  100% {
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+}
+
+
+.todo-container {
+    max-width: 600px;
+    margin: 4px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for todo item */
+  .todo-item {
+    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for todo task */
+  .todo-task {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Style for todo item on hover */
+  .todo-item:hover {
+    background-color: #e9ecef;
+  }
+
+  .icon-button :hover {
+            color: red;
+            cursor: pointer;
+  }
+
+  .icon-button {
+  font-size: 25px;
+    color: black;  /* Default color for the icon */
+    cursor: pointer;  /* Shows hand cursor on hover */
+    margin-left: 10px;
+  }
+
+  .edit-icon {
+    font-size: 25px;
+    color: black;  /* Default color for the icon */
+    cursor: pointer;  /* Shows hand cursor on hover */
+    margin-left: 10px;
+  }
+
+ .update-text {
+
+  display: flex;  /* Aligns children in a row */
+  align-items: center;  /* Centers items vertically */
+  padding: 10px;
+  align-items: stretch;
+  font-size: medium;
+ }
+
+ .update-icon :hover {
+  color: green;
+  
+}
+
+.update-icon {
+  font-size: 20px;
+}
+
+
